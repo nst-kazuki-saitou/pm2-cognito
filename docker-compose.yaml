@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  app:
+    container_name: pm2-cognito
+    build:
+      context: ./pm2
+    ports:
+      - 8080:8080
+    restart: always
+    environment:
+      - IDP_POOL_ID
+      - IDP_CLIENT_ID
+      - IDP_CLIENT_SECRET
