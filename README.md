@@ -8,6 +8,6 @@ PM2からCognito連携するテスト
 
 ```bash
 docker build -t pm2-cognito .
-docker run -p 3000:3000 -it --rm pm2-cognito
-# Access to http://localohost:3000/
+docker run -p 8080:8080 -it --rm pm2-cognito
+# Access to http://localohost:8080/
 ```
